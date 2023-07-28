@@ -13,6 +13,7 @@
       html, body {
         height: 100%;
       }
+
       #left-side, #right-side {
         position: relative;
         display: flex;
@@ -29,7 +30,6 @@
         top: 25%;
         width: 100%;
         max-width: 20rem;
-        margin: auto auto;
       }
 
       a, a:active, a:visited {
@@ -40,38 +40,49 @@
       }
 
       .under-construction-message {
-        margin: 2rem 0 0 0;
+        /* nothing yet */
+      }
+
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 4pt;
+      }
+      h2 {
+        font-size: 1.5rem;
       }
     </style>
   </head>
   <body>
     <div class="container-fluid h-100">
       <div class="row h-100">
-        <div id="left-side" class="col-6 h-100" >
-          <img id="logo-image" src="logo.svg">
+        <div id="left-side" class="col-sm-12 col-md-6 py-4 py-md-0 h-md-100">
+          <img id="logo-image" class="mx-auto mr-md-4" src="logo.svg">
         </div>
-        <div id="right-side" class="col-6 h-100" style="background: #000f9f">
+        <div id="right-side" class="col-sm-12 col-md-6 h-md-100" style="background: #000f9f">
           <div class="container">
 
-            <h1>Jiahui Shi</h1>
-            <h2>Scenic Designer & Scenic Artist</h2>
+            <div>
+              <h1 class="mb-0">Jiahui Shi</h1>
+              <h2 class="mb-4">Scenic Designer & Scenic Artist</h2>
 
-            <ul class="list-unstyled">
-              <li>
-                <a href="mailto: jiahuisart@gmail.com">
-                  <i class="fa fa-envelope"></i>
-                  jiahuisart@gmail.com
-                </a>
-              </li>
-              <li class="d-none">
-                <!-- other stuff goes here -->
-              </li>
-            </ul>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="mailto: jiahuisart@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                    jiahuisart@gmail.com
+                  </a>
+                </li>
+                <li class="d-none">
+                  <!-- other stuff goes here -->
+                </li>
+              </ul>
+            </div>
 
-            <div class="under-construction-message text-monospace" style="font-size: 125%">
-              <i class="fa fa-warning"></i>
-              Under construction &mdash; Launch Date: 2023-08-16
-              <i class="fa fa-warning"></i>
+            <div class="under-construction-message text-monospace mt-4 text-center" style="font-size: 125%">
+              <i class="fa fa-warning text-warning d-block d-md-inline-block"></i>
+              <div class="d-block d-md-inline-block mr-2">Under construction</div>
+              <div class="d-block d-md-inline-block">Launch Date: 2023-08-16</div>
+              <i class="fa fa-warning text-warning d-block d-md-inline-block"></i>
             </div>
 
           </div>
